@@ -6,26 +6,26 @@ A partial implementation of a STRIPS-like planner in Python. The the planner sol
 The project requires [Python](https://www.python.org/) >= 3.6.
 
 ### Task 2: Files of interest
-- Complete the implementation of `task.py` 
+- Complete the implementation of [`task.py`](https://github.com/HSG-WAS-SS22/exercise-2/blob/main/task.py)
    - `task.py`: includes classes for creating Operators and STRIPS-like instances  ⟨Propositional arguments, Operators , Initial state , Goals⟩  
      - Implement the methods `applicable()` and `apply()` of the `Operator` class
      - Implement the methods `goal_reached()` and `get_successor_states()` of the `Task` class
-- Complete the implementation of `search/a_star.py` 
+- Complete the implementation of [`search/a_star.py`](https://github.com/HSG-WAS-SS22/exercise-2/blob/main/search/a_star.py) 
    - `a_star.py`: includes methods for searching based on the A* search algorithm
      - Complete the method `astar_search()` 
-   - `searchspace.py`: includes a `SearchNode` class for creating instance nodes that are visited during search 
+   - [`searchspace.py`](https://github.com/HSG-WAS-SS22/exercise-2/blob/main/search/searchspace.py): includes a `SearchNode` class for creating instance nodes that are visited during search 
 
 ### Task 3: Files of interest
 - Examine the `task-3/t3-domain.py` and the `task-3/t3-problem.py`, and the behavior of the planner when solving the problem in the domain, so that you answer the questions provided to you in the exescise sheet. 
-  - `t3-domain.py`: the domain
-  - `t3-problem.py`: the problem
+  - [`t3-domain.py`](https://github.com/HSG-WAS-SS22/exercise-2/blob/main/task-3/t3-domain.pddl): the domain
+  - [`t3-problem.py`](https://github.com/HSG-WAS-SS22/exercise-2/blob/main/task-3/t3-problem.pddl): the problem
 
 ### Project structure
 ```bash
 ├── benchmarks # benchmark examples with domain and problem use cases, which you can use to see the planner behavior
 ├── examples # simple example of a "block" domain and problem, which you can use to see the planner behavior
-│   ├── blocks-domain.pddl 
-│   └── blocks-problem.pddl
+│   ├── blocks-world-domain.pddl 
+│   └── blocks-world-problem.pddl
 ├── search # includes implementations of different search algorithms (i.e. astar,wastar,gbf,bfs,ehs,ids,sat)
 │   ├── a_star.py # (altered in Task 2) template of A* search algorithm 
 │   ├── breadth_first_search.py
@@ -57,9 +57,9 @@ python3 plan.py [-s {astar,wastar,gbf,bfs,ehs,ids,sat}] [domain] problem
 ```
 For example, to run the planner with the breadth-first algorithm:
 ```
-python3 plan.py -s bfs examples/blocks-domain.pddl examples/blocks-problem.pddl
+python3 plan.py -s bfs examples/blocks-world-domain.pddl examples/blocks-world-problem.pddl
 ```
 Or to run the planner with the A* algorithm that you implemented in Task 2:
 ```
-python3 plan.py -s astar e1-your-domain.pddl e1-your-problem.pddl
+python3 plan.py -s astar t1-your-domain.pddl t1-your-problem.pddl
 ```
