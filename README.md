@@ -6,12 +6,12 @@ A partial implementation of a STRIPS-like planner in Python. The the planner sol
 The project requires [Python](https://www.python.org/) >= 3.6.
 
 ### Task 2: Files of interest
-- Complete the implementation of [`task.py`](https://github.com/HSG-WAS-SS22/exercise-2/blob/main/task.py)
-   - `task.py`: includes classes for creating Operators and STRIPS-like instances  ⟨Propositional arguments, Operators , Initial state , Goals⟩  
+- Complete the implementation of `task.py`
+   - [`task.py`](https://github.com/HSG-WAS-SS22/exercise-2/blob/main/task.py): includes classes for creating Operators and STRIPS-like instances  ⟨Propositional arguments, Operators , Initial state , Goals⟩  
      - Implement the methods `applicable()` and `apply()` of the `Operator` class
      - Implement the methods `goal_reached()` and `get_successor_states()` of the `Task` class
-- Complete the implementation of [`search/a_star.py`](https://github.com/HSG-WAS-SS22/exercise-2/blob/main/search/a_star.py) 
-   - `a_star.py`: includes methods for searching based on the A* search algorithm
+- Complete the implementation of `search/a_star.py`
+   - [`a_star.py`](https://github.com/HSG-WAS-SS22/exercise-2/blob/main/search/a_star.py): includes methods for searching based on the A* search algorithm
      - Complete the method `astar_search()` 
    - [`searchspace.py`](https://github.com/HSG-WAS-SS22/exercise-2/blob/main/search/searchspace.py): includes a `SearchNode` class for creating instance nodes that are visited during search 
 
