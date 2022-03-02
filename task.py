@@ -59,7 +59,7 @@ class Operator:
         """
         return None # remove after implementing the method
 
-    # ---- Step 1 ----
+    # ---- Step 2 ----
     # Implement the method
     def apply(self, state):
         """
