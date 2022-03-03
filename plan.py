@@ -16,9 +16,6 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>
 #
 
-# TODO: Give searches and heuristics commandline options and reenable preferred
-# operators.
-
 import argparse
 import logging
 import os

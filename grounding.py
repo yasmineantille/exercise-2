@@ -83,10 +83,6 @@ def ground(
         logging.debug("Operators:\n%s" % "\n".join(map(str, operators)))
 
     # Ground goal
-    # TODO: Remove facts that can only become true and are true in the
-    #       initial state
-    # TODO: Return simple unsolvable problem if goal contains a fact that can
-    #       only become false and is false in the initial state
     goals = _get_partial_state(problem.goal)
     if verbose_logging:
         logging.debug("Goal:\n%s" % goals)
@@ -205,8 +201,6 @@ def _create_type_map(objects):
             if parent_type is None:
                 # if object_type is None:
                 break
-
-    # TODO sets in map should be ordered lists
     return type_map
 
 
